@@ -1,0 +1,43 @@
+-- q3
+create type DivisionType as enum ('Atlantic', 'Central', 'Southeast', 'Northwest', 'Pacific', 'Southwest');
+create type ConferenceType as enum ('Eastern', 'Western');
+
+create table teams(
+	id char(3) primary key,
+	location text,
+	name text,
+	division DivisionType,
+	conference ConferenceType
+);
+
+insert into teams VALUES
+('BOS', 'Boston', 'Celtics', 'Atlantic', 'Eastern'),
+('BKN', 'Brooklyn', 'Nets', 'Atlantic', 'Eastern'),
+('NYK', 'New York', 'Knicks', 'Atlantic', 'Eastern'),
+('PHI', 'Philadelphia', '76ers', 'Atlantic', 'Eastern'),
+('TOR', 'Toronto', 'Raptors', 'Atlantic', 'Eastern'),
+('CHI', 'Chicago', 'Bulls', 'Central', 'Eastern'),
+('CLE', 'Cleveland', 'Cavaliers', 'Central', 'Eastern'),
+('DET', 'Detroit', 'Pistons', 'Central', 'Eastern'),
+('IND', 'Indiana', 'Pacers', 'Central', 'Eastern'),
+('MIL', 'Milwaukee', 'Bucks', 'Central', 'Eastern'),
+('ATL', 'Atlanta', 'Hawks', 'Southeast', 'Eastern'),
+('CHA', 'Charlotte', 'Bobcats', 'Southeast', 'Eastern'),
+('MIA', 'Miami', 'Heat', 'Southeast', 'Eastern'),
+('ORL', 'Orlando', 'Magic', 'Southeast', 'Eastern'),
+('WAS', 'Washington', 'Wizards', 'Southeast', 'Eastern'),
+('DEN', 'Denver', 'Nuggets', 'Northwest', 'Western'),
+('MIN', 'Minnesota', 'Timberwolves', 'Northwest', 'Western'),
+('OKC', 'Oklahoma City', 'Thunder', 'Northwest', 'Western'),
+('POR', 'Portland', 'Trail Blazers', 'Northwest', 'Western'),
+('UTA', 'Utah', 'Jazz', 'Northwest', 'Western'),
+('GSW', 'Golden State', 'Warriors', 'Pacific', 'Western'),
+('LAC', 'Los Angeles', 'Clippers', 'Pacific', 'Western'),
+('LAL', 'Los Angeles', 'Lakers', 'Pacific', 'Western'),
+('PHX', 'Phoenix', 'Suns', 'Pacific', 'Western'),
+('SAC', 'Sacramento', 'Kings', 'Pacific', 'Western'),
+('DAL', 'Dallas', 'Mavericks', 'Southwest', 'Western'),
+('HOU', 'Houston', 'Rockets', 'Southwest', 'Western'),
+('MEM', 'Memphis', 'Grizzlies', 'Southwest', 'Western'),
+('NOP', 'New Orleans', 'Hornets', 'Southwest', 'Western'),
+('SAS', 'San Antonio', 'Spurs', 'Southwest', 'Western');
