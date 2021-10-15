@@ -1,6 +1,4 @@
 -- q6
-select * from player_bios;
-
 alter table player_bios
 add column inches numeric;
 	
@@ -15,4 +13,5 @@ rename column inches to height;
 
 select firstname, lastname, height 
 from player_bios
+order by id
 limit 5;

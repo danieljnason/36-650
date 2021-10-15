@@ -23,4 +23,6 @@ update new_table
 set position = 'SG/SF'
 where pr1 >= 0 and pr1 < 10.6;
 	 
-select * from new_table limit 10;
+select * from new_table
+order by player
+limit 10;
