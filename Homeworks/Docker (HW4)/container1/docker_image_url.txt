@@ -1,2 +1,2 @@
 url:
-https://hub.docker.com/r/dnason1/hw4container1/tags
+https://hub.docker.com/repository/docker/dnason1/hw4container1
