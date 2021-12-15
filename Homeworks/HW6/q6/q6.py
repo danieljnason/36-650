@@ -42,8 +42,7 @@ class ReversedLinkedList(object):
         if not self.tail:
             return
         temp = self.tail
-        # Check if tail node is to be deleted
-        if self.tail.data == data:
+        if self.tail.data == data: # Check if tail node is to be deleted
             self.tail = temp.previous
             print("Deleted node is " + str(self.tail.data))
             return
